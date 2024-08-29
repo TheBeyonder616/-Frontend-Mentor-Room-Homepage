@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <!-- ================================={Header}=====================-->
+    <header id="header" class="header">
+      <!-- ================================={Navigation}=====================-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <!-- Menu -->
+          <li class="nav__menu">
+            <img
+              role="button"
+              data-open-nav
+              aria-expanded="true"
+              src="./images/icon-hamburger.svg"
+              alt="An icon of a menu"
+            />
+          </li>
+          <!-- logo -->
+          <li class="nav__logo">
+            <img src="./images/logo.svg" alt="Room brand logo" />
+          </li>
+        </ul>
+
+        <ul class="nav__navigation">
+          <li data-control="0">home</li>
+          <li data-control="1">shop</li>
+          <li data-control="2">about</li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <!-- ================================={Navigation is open}=====================-->
+      <aside class="nav__is-open hide" data-nav>
+        <section class="nav__is-open__menu" data-menu-nav>
+          <article class="menu__containers">
+            <div class="nav__is-open__menu__close">
+              <img
+                role="button"
+                data-close-nav
+                aria-expanded="false"
+                src="./images/icon-close.svg"
+                alt="an X icon to close the menu"
+              />
+            </div>
+            <ul class="nav__is-open__menu__list" data-nav-list>
+              <li data-control="0" data-nav-item>home</li>
+              <li data-control="1" data-nav-item>shop</li>
+              <li data-control="2" data-nav-item>about</li>
+              <li><a href="#contact" data-nav-item>contact</a></li>
+            </ul>
+          </article>
+        </section>
+        <section class="nav__is-open__overlay" data-overlay></section>
+      </aside>
+      <!-- ================================={Slider}=====================-->
+
+      <article class="slider">
+        <section class="slider__card">
+          <!-- [Img 1] -->
+          <picture data-slide data-lazy-picture class="lazy-img--container">
+            <!-- Desktop -->
+            <source
+              data-srcset="./images/desktop-image-hero-1.jpg"
+              media="(min-width: 64em)"
+            />
+            <!-- Mobile -->
+            <img
+              class="lazy-img"
+              data-src="./images/mobile-image-hero-1.jpg"
+              alt="An image of a chair and a plate on  a table"
+            />
+          </picture>
+          <!-- [Img 2]-->
+
+          <picture data-slide data-lazy-picture class="lazy-img--container">
+            <!-- Desktop -->
+            <source
+              data-srcset="./images/desktop-image-hero-2.jpg"
+              media="(min-width: 64em)"
+            />
+            <!-- Mobile -->
+            <img
+              class="lazy-img"
+              data-src="./images/mobile-image-hero-2.jpg"
+              alt="An image of a chair and a plate on  a table"
+            />
+          </picture>
+          <!-- [Img 3] -->
+          <picture data-slide data-lazy-picture class="lazy-img--container">
+            <!-- Desktop -->
+            <source
+              data-srcset="./images/desktop-image-hero-3.jpg"
+              media="(min-width: 64em)"
+            />
+            <!-- Desktop -->
+            <img
+              class="lazy-img"
+              data-src="./images/mobile-image-hero-3.jpg"
+              alt="An image of a chair and a plate on  a table"
+            />
+          </picture>
+        </section>
+        <!-- BUTTONS -->
+        <section class="slider__button__container">
+          <div class="slider__button" data-mobile-right>
+            <img
+              role="button"
+              aria-expanded="false"
+              src="./images/icon-angle-right.svg"
+              alt="An icon of an arrow facing the right direction"
+            />
+          </div>
+          <div class="slider__button" data-mobile-left>
+            <img
+              role="button"
+              aria-expanded="false"
+              src="./images/icon-angle-left.svg"
+              alt="An icon of an arrow facing the left direction"
+            />
+          </div>
+        </section>
+      </article>
+      <!-- ================================={Pages}=====================-->
+      <article class="slider-section">
+        <section class="slider-section__article">
+          <!-- {Discover} -->
+          <div class="slider-section__article__card" data-slide-article>
+            <!-- Heading -->
+            <h1 class="heading-primary">
+              Discover innovative
+              <span> ways to decorate </span>
+            </h1>
+            <!-- Paragraph -->
+            <p class="heading-p">
+              <span> We provide unmatched quality, comfort, and </span>
+              style for property owners across the country.
+              <span> Our experts combine form and function in </span>
+              bringing your vision to life. Create a room in
+              <span> your own style with our collection and make your </span>
+              property a reflection of you and what you love.
+            </p>
+            <!-- BUtton -->
+            <a href="#header" role="button" aria-expanded="false">
+              Shop now
+              <div>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="an image of an arrow to the right"
+                />
+              </div>
+            </a>
+          </div>
+
+          <!-- ==========={Availabl}============-->
+          <div class="slider-section__article__card" data-slide-article>
+            <!-- Heading -->
+            <h2 class="heading-primary">
+              We are available all
+              <span> across the globe </span>
+            </h2>
+            <!-- Paragraph -->
+            <p class="heading-p">
+              With stores all over the world, it's easy for you to find
+              furniture
+              <span>
+                for your home or place of business. Locally, we’re in most
+              </span>
+              major cities throughout the country. Find the branch nearest
+              <span>
+                you using our store locator. Any questions? Don't hesitate to
+              </span>
+              contact us today.
+            </p>
+            <!-- BUtton -->
+            <a href="#header" role="button" aria-expanded="false">
+              Shop now
+              <div>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="an image of an arrow to the right"
+                />
+              </div>
+            </a>
+          </div>
+          <!--===================== {Manufactured} ===============-->
+          <div class="slider-section__article__card" data-slide-article>
+            <!-- Heading -->
+            <h2 class="heading-primary">
+              Manufactured with
+              <span>the best materials</span>
+            </h2>
+            <!-- Paragraph -->
+            <p class="heading-p">
+              Our modern furniture store provide a high level of quality. Our
+              <span>
+                company has invested in advanced technology to ensure that
+              </span>
+              every product is made as perfect and as consistent as
+              <span>
+                possible. With three decades of experience in this industry, we
+              </span>
+              understand what customers want for their home and office.
+            </p>
+            <!-- BUtton -->
+            <a href="#header" role="button" aria-expanded="false">
+              Shop now
+              <div>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="an image of an arrow to the right"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Button desktop -->
+        <section class="slider-section__button__container">
+          <div class="slider-section__button" data-mobile-right>
+            <img
+              role="button"
+              aria-expanded="false"
+              src="./images/icon-angle-right.svg"
+              alt="An icon of an arrow facing the right direction"
+            />
+          </div>
+          <div class="slider-section__button" data-mobile-left>
+            <img
+              role="button"
+              aria-expanded="false"
+              src="./images/icon-angle-left.svg"
+              alt="An icon of an arrow facing the left direction"
+            />
+          </div>
+        </section>
+      </article>
+    </header>
+
+    <main class="main">
+      <!-- {Section1} -->
+      <section class="about-dark lazy-img--container">
+        <img
+          class="lazy-img"
+          data-lazy-img
+          data-src="./images/image-about-dark.jpg"
+          alt="A picture of a dark coffic table"
+        />
+      </section>
+      <!-- {Section2} -->
+      <section class="section-about">
+        <!-- heading -->
+        <h3 class="heading-third">About our furniture</h3>
+        <!-- paragraph -->
+        <p class="heading-p">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </section>
+      <!-- {section3} -->
+      <section id="contact" class="about-light lazy-img--container">
+        <img
+          class="lazy-img"
+          data-lazy-img
+          data-src="./images/image-about-light.jpg"
+          alt="A picture of a light coffic table"
+        />
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Peter Godspower</a>.
+    </footer>
+  </body>
+</html>
